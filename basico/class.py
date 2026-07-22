@@ -26,10 +26,10 @@ class ProcessadorCSV:
         return self.df
 
 
-arquivo_csv = '.\exemplo.csv'
+arquivo_csv = './exemplo.csv'
 estado_filtrado = 'SP'
 
 processador = ProcessadorCSV(arquivo_csv)
-df_filtrado = processador.processo(estado_filtrado)
+df_filtrado = processador.processar(estado_filtrado)
 
 print(df_filtrado)
