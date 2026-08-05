@@ -28,9 +28,9 @@ async def gerar_compra():
     return [{
         'client': fake.name(),
         'creditcard': fake.credit_card_provider(),
-        'product': tuple['Product Name'],
-        'ean': int(tuple['EAN']),
-        'price': round(float(tuple['Price'])*1.2,2),
+        'product': fake.random_company_product,
+        'ean': fake.ean(),
+        'price': fake.currency,
         'clientPostion': fake.location_on_land(),
         'store': lojapadraoonline,
         'datetime': fake.iso8601()
